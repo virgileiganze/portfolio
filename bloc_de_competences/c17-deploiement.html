@@ -1,124 +1,191 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4C27G56E1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q4C27G56E1');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C17 — Déploiement d'un service · Portfolio BTS SIO</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-
-  <nav class="nav">
-    <a href="../index.html" class="nav-brand">← Retour au portfolio</a>
-    <ul class="nav-links">
-      <li><a href="c1-recensement.html">C1</a></li>
-      <li><a href="c7-collecte-demandes.html">C7</a></li>
-      <li><a href="c11-referencement.html">C11</a></li>
-      <li><a href="c14-planification.html">C14</a></li>
-      <li><a href="c17-deploiement.html" class="active">C17</a></li>
-    </ul>
-  </nav>
-
-  <div class="page-wrapper">
-
-    <header class="page-header">
-      <p class="eyebrow">Bloc 5 · Mettre à disposition un service informatique</p>
-      <h1>C17 — Déploiement d'un service</h1>
-      <p class="subtitle">Installation from scratch de GLPI (Apache + PHP + MySQL) et mise en ligne d'un site vitrine via FTP sur Alwaysdata.</p>
-    </header>
-
-    <nav class="comp-nav" aria-label="Navigation compétences">
-      <a class="comp-pill" href="c1-recensement.html">C1</a>
-      <a class="comp-pill" href="c7-collecte-demandes.html">C7</a>
-      <a class="comp-pill" href="c11-referencement.html">C11</a>
-      <a class="comp-pill" href="c14-planification.html">C14</a>
-      <a class="comp-pill" href="c17-deploiement.html">C17</a>
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q4C27G56E1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q4C27G56E1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C17 - Déploiement d'un service</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">← Retour au portfolio</a>
+      <ul class="nav-links">
+        <li><a href="c1-recensement.html">C1</a></li>
+        <li><a href="c7-collecte-demandes.html">C7</a></li>
+        <li><a href="c11-referencement.html">C11</a></li>
+        <li><a href="c14-planification.html">C14</a></li>
+        <li><a href="c17-deploiement.html" class="active">C17</a></li>
+      </ul>
     </nav>
 
-    <article class="comp-article" id="c17-glpi">
-      <div class="comp-head">
-        <span class="comp-id">C17 · Service 1</span>
-        <h2>Déploiement de GLPI — Installation from scratch</h2>
-      </div>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <p class="eyebrow">
+          Bloc 5 · Mettre à disposition un service informatique
+        </p>
+        <h1>C17 - Déploiement d'un service</h1>
+        <p class="subtitle">
+          Installation from scratch de GLPI (Apache + PHP + MySQL) et mise en
+          ligne d'un site vitrine via FTP sur Alwaysdata.
+        </p>
+      </header>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en milieu professionnel — Hackathon BTS SIO</p>
+      <nav class="comp-nav" aria-label="Navigation compétences">
+        <a class="comp-pill" href="c1-recensement.html">C1</a>
+        <a class="comp-pill" href="c7-collecte-demandes.html">C7</a>
+        <a class="comp-pill" href="c11-referencement.html">C11</a>
+        <a class="comp-pill" href="c14-planification.html">C14</a>
+        <a class="comp-pill" href="c17-deploiement.html">C17</a>
+      </nav>
 
-        <p>J'ai installé et configuré <strong>GLPI</strong> de manière complète sur un serveur dédié au projet, en partant d'un environnement vierge. L'objectif était de disposer d'un outil de gestion du parc et des incidents opérationnel, accessible à l'ensemble de l'équipe pendant le hackathon.</p>
-
-        <p><strong>Stack déployée :</strong></p>
-        <ul>
-          <li><strong>Serveur web Apache</strong> — configuration du virtual host pour servir l'application GLPI</li>
-          <li><strong>PHP</strong> — installation des extensions requises par GLPI (php-mysql, php-xml, php-mbstring, etc.)</li>
-          <li><strong>MySQL</strong> — création de la base de données et de l'utilisateur GLPI avec les droits appropriés</li>
-          <li><strong>Agent GLPI</strong> — déploiement sur les postes pour la remontée automatique d'inventaire</li>
-        </ul>
-
-        <div class="tech-note">
-          <strong>Pourquoi cette stack ?</strong> GLPI est une application PHP qui nécessite un serveur web (Apache ou Nginx), un interpréteur PHP et une base de données relationnelle (MySQL/MariaDB). L'installation from scratch implique de configurer chaque composant manuellement, contrairement à une installation via un package préconfiguré.
+      <article class="comp-article" id="c17-glpi">
+        <div class="comp-head">
+          <span class="comp-id">C17 · Service 1</span>
+          <h2>Déploiement de GLPI - Installation from scratch</h2>
         </div>
 
-        <p>Une fois le serveur opérationnel, GLPI a été rendu accessible aux membres de l'équipe via le réseau local, permettant la création et la gestion de tickets d'incidents en conditions réelles pendant le hackathon.</p>
+        <div class="real-block">
+          <p class="real-label">
+            Réalisation en cours de formation - Hackathon BTS SIO
+          </p>
 
-        <!-- Insérer captures : interface GLPI opérationnelle, configuration serveur -->
-        <div class="img-placeholder">[ Capture d'écran — GLPI · Interface principale après installation ]</div>
-        <div class="img-placeholder">[ Capture d'écran — Configuration Apache/PHP · Virtual host ou commandes d'installation ]</div>
-      </div>
+          <p>
+            J'ai installé et configuré <strong>GLPI</strong> de manière complète
+            sur un serveur dédié au projet, en partant d'un environnement
+            vierge. L'objectif était de disposer d'un outil de gestion du parc
+            et des incidents opérationnel, accessible à l'ensemble de l'équipe
+            pendant le hackathon.
+          </p>
 
-    </article>
+          <p><strong>Stack déployée :</strong></p>
+          <ul>
+            <li>
+              <strong>Serveur web Apache</strong> - configuration du virtual
+              host pour servir l'application GLPI
+            </li>
+            <li>
+              <strong>PHP</strong> - installation des extensions requises par
+              GLPI (php-mysql, php-xml, php-mbstring, etc.)
+            </li>
+            <li>
+              <strong>MySQL</strong> - création de la base de données et de
+              l'utilisateur GLPI avec les droits appropriés
+            </li>
+            <li>
+              <strong>Agent GLPI</strong> - déploiement sur les postes pour la
+              remontée automatique d'inventaire
+            </li>
+          </ul>
 
-    <article class="comp-article" id="c17-site">
-      <div class="comp-head">
-        <span class="comp-id">C17 · Service 2</span>
-        <h2>Déploiement du site vitrine Altis — Mise en production sur Alwaysdata</h2>
-      </div>
+          <div class="tech-note">
+            <strong>Pourquoi cette stack ?</strong> GLPI est une application PHP
+            qui nécessite un serveur web (Apache ou Nginx), un interpréteur PHP
+            et une base de données relationnelle (MySQL/MariaDB). L'installation
+            from scratch implique de configurer chaque composant manuellement,
+            contrairement à une installation via un package préconfiguré.
+          </div>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en milieu professionnel — Hackathon BTS SIO</p>
+          <p>
+            Une fois le serveur opérationnel, GLPI a été rendu accessible aux
+            membres de l'équipe via le réseau local, permettant la création et
+            la gestion de tickets d'incidents en conditions réelles pendant le
+            hackathon.
+          </p>
 
-        <p>Le site vitrine de l'entreprise fictive Altis, développé en HTML, CSS et JavaScript, a été mis en production sur la plateforme d'hébergement <strong>Alwaysdata</strong> afin de le rendre accessible via internet.</p>
+          <img
+            src="parc_complet.png"
+            alt="Interface GLPI - Liste des équipements recensés"
+          />
+        </div>
+      </article>
 
-        <p><strong>Processus de déploiement :</strong></p>
-        <ul>
-          <li>Connexion au serveur via <strong>FileZilla</strong> (client FTP)</li>
-          <li>Transfert des fichiers du site vers le répertoire web du serveur Alwaysdata</li>
-          <li>Vérification du bon fonctionnement du site en conditions réelles (accès URL, rendu navigateur)</li>
-        </ul>
-
-        <div class="tech-note">
-          <strong>FTP vs SFTP :</strong> le transfert via FTP (FileZilla) est fonctionnel mais non chiffré — les identifiants et fichiers transitent en clair sur le réseau. En environnement de production réel, le protocole <strong>SFTP</strong> (FTP over SSH) est préférable car il chiffre la connexion. Alwaysdata supporte SFTP nativement.
+      <article class="comp-article" id="c17-site">
+        <div class="comp-head">
+          <span class="comp-id">C17 · Service 2</span>
+          <h2>
+            Déploiement du site vitrine Altis - Mise en production sur
+            Alwaysdata
+          </h2>
         </div>
 
-        <p>Le site développé comprend une page d'accueil avec présentation de l'équipe, une section avis avec gestion dynamique côté client (JavaScript), et une intégration Google Analytics pour le suivi de fréquentation.</p>
+        <div class="real-block">
+          <p class="real-label">
+            Réalisation en cours de formation - Hackathon BTS SIO
+          </p>
 
-        <div class="limit-note">
-          ⚠ Le formulaire d'avis est géré entièrement côté client (JavaScript) : les données ne sont pas persistées en base de données. Les avis s'affichent dynamiquement dans le DOM mais disparaissent au rechargement de la page. Une évolution possible serait d'ajouter un backend PHP avec insertion MySQL.
+          <p>
+            Le site vitrine de l'entreprise fictive Altis, développé en HTML,
+            CSS et JavaScript, a été mis en production sur la plateforme
+            d'hébergement <strong>Alwaysdata</strong> afin de le rendre
+            accessible via internet.
+          </p>
+
+          <p><strong>Processus de déploiement :</strong></p>
+          <ul>
+            <li>
+              Connexion au serveur via <strong>FileZilla</strong> (client FTP)
+            </li>
+            <li>
+              Transfert des fichiers du site vers le répertoire web du serveur
+              Alwaysdata
+            </li>
+            <li>
+              Vérification du bon fonctionnement du site en conditions réelles
+              (accès URL, rendu navigateur)
+            </li>
+          </ul>
+
+          <div class="tech-note">
+            <strong>FTP vs SFTP :</strong> le transfert via FTP (FileZilla) est
+            fonctionnel mais non chiffré (les identifiants et fichiers
+            transitent en clair sur le réseau). En environnement de production
+            réel, le protocole <strong>SFTP</strong> (FTP over SSH) est
+            préférable car il chiffre la connexion. Alwaysdata supporte SFTP
+            nativement.
+          </div>
+
+          <p>
+            Le site développé comprend une page d'accueil avec présentation de
+            l'équipe, une section avis avec gestion dynamique côté client
+            (JavaScript), et une intégration Google Analytics pour le suivi de
+            fréquentation.
+          </p>
+
+          <div class="limit-note">
+            ⚠ Le formulaire d'avis est géré entièrement côté client (JavaScript)
+            : les données ne sont pas persistées en base de données. Les avis
+            s'affichent dynamiquement dans le DOM mais disparaissent au
+            rechargement de la page. Une évolution possible serait d'ajouter un
+            backend PHP avec insertion MySQL.
+          </div>
+
+          <img
+            src="always.png"
+            alt="Site Altis Accessible en ligne via URL publique "
+          />
         </div>
 
-        <!-- Insérer captures : FileZilla avec transfert, site en ligne, URL Alwaysdata -->
-        <div class="img-placeholder">[ Capture d'écran — FileZilla · Transfert des fichiers vers Alwaysdata ]</div>
-        <div class="img-placeholder">[ Capture d'écran — Site Altis · Accessible en ligne via URL publique ]</div>
-      </div>
+        <div class="real-block">
+          <p class="real-label">Réalisation en milieu professionnel</p>
+          <p>À compléter</p>
+        </div>
+      </article>
+    </div>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en cours de formation</p>
-        <p>À compléter — insérer ici une réalisation issue de la formation (TP déploiement, installation d'un service en VM, configuration serveur web).</p>
-      </div>
-
-    </article>
-
-  </div>
-
-  <footer class="site-footer">
-    Iganze Virgile · BTS SIO SISR · Efrei Paris · Session 2027
-  </footer>
-
-</body>
+    <footer class="site-footer">
+      Iganze Virgile · BTS SIO SISR · Efrei Paris · Session 2027
+    </footer>
+  </body>
 </html>

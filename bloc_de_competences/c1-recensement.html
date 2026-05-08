@@ -1,93 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4C27G56E1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q4C27G56E1');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C1 — Recensement des ressources · Portfolio BTS SIO</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-
-  <nav class="nav">
-    <a href="../index.html" class="nav-brand">← Retour au portfolio</a>
-    <ul class="nav-links">
-      <li><a href="c1-recensement.html" class="active">C1</a></li>
-      <li><a href="c7-collecte-demandes.html">C7</a></li>
-      <li><a href="c11-referencement.html">C11</a></li>
-      <li><a href="c14-planification.html">C14</a></li>
-      <li><a href="c17-deploiement.html">C17</a></li>
-    </ul>
-  </nav>
-
-  <div class="page-wrapper">
-
-    <header class="page-header">
-      <p class="eyebrow">Bloc 1 · Gérer le patrimoine informatique</p>
-      <h1>C1 — Recensement et identification des ressources numériques</h1>
-      <p class="subtitle">Inventaire et suivi du parc informatique via GLPI dans le cadre du hackathon BTS SIO.</p>
-    </header>
-
-    <nav class="comp-nav" aria-label="Navigation compétences">
-      <a class="comp-pill" href="c1-recensement.html">C1</a>
-      <a class="comp-pill" href="c7-collecte-demandes.html">C7</a>
-      <a class="comp-pill" href="c11-referencement.html">C11</a>
-      <a class="comp-pill" href="c14-planification.html">C14</a>
-      <a class="comp-pill" href="c17-deploiement.html">C17</a>
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q4C27G56E1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q4C27G56E1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C1 - Recensement des ressources</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">← Retour au portfolio</a>
+      <ul class="nav-links">
+        <li><a href="c1-recensement.html" class="active">C1</a></li>
+        <li><a href="c7-collecte-demandes.html">C7</a></li>
+        <li><a href="c11-referencement.html">C11</a></li>
+        <li><a href="c14-planification.html">C14</a></li>
+        <li><a href="c17-deploiement.html">C17</a></li>
+      </ul>
     </nav>
 
-    <article class="comp-article" id="c1">
-      <div class="comp-head">
-        <span class="comp-id">C1</span>
-        <h2>Recensement et identification des ressources numériques</h2>
-      </div>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <p class="eyebrow">Bloc 1 · Gérer le patrimoine informatique</p>
+        <h1>C1 — Recensement et identification des ressources numériques</h1>
+        <p class="subtitle">
+          Inventaire et suivi du parc informatique via GLPI dans le cadre du
+          hackathon BTS SIO.
+        </p>
+      </header>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en milieu professionnel — Hackathon BTS SIO</p>
+      <nav class="comp-nav" aria-label="Navigation compétences">
+        <a class="comp-pill" href="c1-recensement.html">C1</a>
+        <a class="comp-pill" href="c7-collecte-demandes.html">C7</a>
+        <a class="comp-pill" href="c11-referencement.html">C11</a>
+        <a class="comp-pill" href="c14-planification.html">C14</a>
+        <a class="comp-pill" href="c17-deploiement.html">C17</a>
+      </nav>
 
-        <p>Dans le cadre du hackathon BTS SIO, j'ai mis en place et utilisé <strong>GLPI (Gestionnaire Libre de Parc Informatique)</strong> comme outil central de recensement des ressources numériques de l'équipe projet Altis.</p>
-
-        <p>L'inventaire du parc a été réalisé via l'<strong>agent GLPI</strong>, permettant une remontée automatique des informations matérielles et logicielles sans saisie manuelle. Chaque équipement recensé était associé aux caractéristiques suivantes :</p>
-
-        <ul>
-          <li>Numéro de série et identification matérielle</li>
-          <li>Configuration technique (processeur, RAM, stockage)</li>
-          <li>Utilisateur associé et localisation</li>
-          <li>Logiciels installés et versions</li>
-        </ul>
-
-        <div class="tech-note">
-          <strong>Agent GLPI :</strong> l'agent s'exécute sur chaque poste et remonte automatiquement l'inventaire vers le serveur GLPI central via le protocole HTTP/HTTPS. Cela évite les erreurs de saisie manuelle et garantit des données à jour.
+      <article class="comp-article" id="c1">
+        <div class="comp-head">
+          <span class="comp-id">C1</span>
+          <h2>Recensement et identification des ressources numériques</h2>
         </div>
 
-        <p>Le suivi des <strong>licences logicielles</strong> a également été intégré dans GLPI, permettant de vérifier la conformité du parc et d'identifier les logiciels non licenciés ou en version obsolète.</p>
+        <div class="real-block">
+          <p class="real-label">Réalisation en formation - Hackathon BTS SIO</p>
 
-        <p>Enfin, GLPI a servi de point central pour la traçabilité des <strong>interventions techniques</strong> : chaque incident ou demande liée à un équipement était rattaché à la fiche matériel correspondante, facilitant le suivi du cycle de vie des ressources.</p>
+          <p>
+            Dans le cadre du hackathon BTS SIO, j'ai mis en place et utilisé
+            <strong>GLPI (Gestionnaire Libre de Parc Informatique)</strong>
+            comme outil central de recensement des ressources numériques de
+            l'équipe projet Altis.
+          </p>
 
-        <!-- Insérer ici une capture d'écran de l'interface GLPI (liste des équipements, fiche matériel) -->
-        <div class="img-placeholder">[ Capture d'écran — Interface GLPI · Liste des équipements recensés ]</div>
-        <div class="img-placeholder">[ Capture d'écran — Fiche équipement GLPI · Détail d'un poste inventorié ]</div>
-      </div>
+          <p>
+            L'inventaire du parc a été réalisé via l'<strong>agent GLPI</strong
+            >, permettant une remontée automatique des informations matérielles
+            et logicielles sans saisie manuelle. Chaque équipement recensé était
+            associé aux caractéristiques suivantes :
+          </p>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en cours de formation</p>
-        <!-- À compléter avec une réalisation issue des cours (TP, projet pédagogique) -->
-        <p>À compléter — insérer ici une réalisation effectuée en formation (TP d'inventaire, exercice sur GLPI ou outil équivalent).</p>
-      </div>
+          <ul>
+            <li>Numéro de série et identification matérielle</li>
+            <li>Configuration technique (processeur, RAM, stockage)</li>
+            <li>Utilisateur associé et localisation</li>
+            <li>Logiciels installés et versions</li>
+          </ul>
 
-    </article>
+          <div class="tech-note">
+            <strong>Agent GLPI :</strong> l'agent s'exécute sur chaque poste et
+            remonte automatiquement l'inventaire vers le serveur GLPI central
+            via le protocole HTTP/HTTPS. Cela évite les erreurs de saisie
+            manuelle et garantit des données à jour.
+          </div>
 
-  </div>
+          <p>
+            Le suivi des <strong>licences logicielles</strong> a également été
+            intégré dans GLPI, permettant de vérifier la conformité du parc et
+            d'identifier les logiciels non licenciés ou en version obsolète.
+          </p>
 
-  <footer class="site-footer">
-    Iganze Virgile · BTS SIO SISR · Efrei Paris · Session 2027
-  </footer>
+          <p>
+            Enfin, GLPI a servi de point central pour la traçabilité des
+            <strong>interventions techniques</strong> : chaque incident ou
+            demande liée à un équipement était rattaché à la fiche matériel
+            correspondante, facilitant le suivi du cycle de vie des ressources.
+          </p>
 
-</body>
+          <img
+            src="parc_complet.png"
+            alt="Interface GLPI - Liste des équipements recensés"
+          />
+          <img
+            src="recensement_ordinateurs.png"
+            alt="Interface GLPI - équipements recensé en détails"
+          />
+        </div>
+
+        <div class="real-block">
+          <p class="real-label">Réalisation en milieu professionnelle</p>
+          <p>À compléter</p>
+        </div>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      Iganze Virgile · BTS SIO SISR · Efrei Paris · Session 2027
+    </footer>
+  </body>
 </html>

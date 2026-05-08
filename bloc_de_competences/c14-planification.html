@@ -1,110 +1,147 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4C27G56E1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q4C27G56E1');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C14 — Planification des activités · Portfolio BTS SIO</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-
-  <nav class="nav">
-    <a href="../index.html" class="nav-brand">← Retour au portfolio</a>
-    <ul class="nav-links">
-      <li><a href="c1-recensement.html">C1</a></li>
-      <li><a href="c7-collecte-demandes.html">C7</a></li>
-      <li><a href="c11-referencement.html">C11</a></li>
-      <li><a href="c14-planification.html" class="active">C14</a></li>
-      <li><a href="c17-deploiement.html">C17</a></li>
-    </ul>
-  </nav>
-
-  <div class="page-wrapper">
-
-    <header class="page-header">
-      <p class="eyebrow">Bloc 4 · Travailler en mode projet</p>
-      <h1>C14 — Planification des activités</h1>
-      <p class="subtitle">Pilotage opérationnel d'un projet en contrainte de temps via Trello Kanban et décomposition des tâches en critères SMART.</p>
-    </header>
-
-    <nav class="comp-nav" aria-label="Navigation compétences">
-      <a class="comp-pill" href="c1-recensement.html">C1</a>
-      <a class="comp-pill" href="c7-collecte-demandes.html">C7</a>
-      <a class="comp-pill" href="c11-referencement.html">C11</a>
-      <a class="comp-pill" href="c14-planification.html">C14</a>
-      <a class="comp-pill" href="c17-deploiement.html">C17</a>
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q4C27G56E1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q4C27G56E1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C14 - Planification des activités</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">← Retour au portfolio</a>
+      <ul class="nav-links">
+        <li><a href="c1-recensement.html">C1</a></li>
+        <li><a href="c7-collecte-demandes.html">C7</a></li>
+        <li><a href="c11-referencement.html">C11</a></li>
+        <li><a href="c14-planification.html" class="active">C14</a></li>
+        <li><a href="c17-deploiement.html">C17</a></li>
+      </ul>
     </nav>
 
-    <article class="comp-article" id="c14">
-      <div class="comp-head">
-        <span class="comp-id">C14</span>
-        <h2>Planification des activités</h2>
-      </div>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <p class="eyebrow">Bloc 4 · Travailler en mode projet</p>
+        <h1>C14 - Planification des activités</h1>
+        <p class="subtitle">
+          Pilotage opérationnel d'un projet avec une contrainte de temps via
+          Trello Kanban et décomposition des tâches en critères SMART.
+        </p>
+      </header>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en milieu professionnel — Hackathon BTS SIO</p>
+      <nav class="comp-nav" aria-label="Navigation compétences">
+        <a class="comp-pill" href="c1-recensement.html">C1</a>
+        <a class="comp-pill" href="c7-collecte-demandes.html">C7</a>
+        <a class="comp-pill" href="c11-referencement.html">C11</a>
+        <a class="comp-pill" href="c14-planification.html">C14</a>
+        <a class="comp-pill" href="c17-deploiement.html">C17</a>
+      </nav>
 
-        <p>En qualité de <strong>chef de projet</strong> pour l'équipe Altis, j'ai pris en charge la planification opérationnelle complète du projet dans un contexte de contrainte temporelle forte (livrables attendus à chaque séance).</p>
-
-        <p><strong>Problématique identifiée :</strong> le projet présentait des dépendances techniques strictes à respecter dans un ordre précis :</p>
-
-        <ul>
-          <li>La base de données devait être opérationnelle avant le développement de l'API</li>
-          <li>L'API devait être stable avant l'intégration côté frontend</li>
-          <li>Le PRA supposait un environnement de production fonctionnel au préalable</li>
-        </ul>
-
-        <p>Tout retard sur un composant critique entraînait un <strong>risque de blocage en cascade</strong> sur les composants suivants. La planification devait donc tenir compte de ces dépendances et répartir clairement les responsabilités.</p>
-
-        <p><strong>Décomposition en tâches SMART :</strong> j'ai structuré l'ensemble du projet en tâches répondant aux critères SMART (Spécifiques, Mesurables, Atteignables, Réalistes, Temporellement définies). Chaque tâche était associée à un responsable, une échéance et un critère de validation explicite, évitant toute ambiguïté sur la définition du "terminé".</p>
-
-        <p><strong>Outil de suivi — Tableau Trello Kanban :</strong> j'ai mis en place un tableau structuré en 5 colonnes, ce qui permettait de distinguer la validation de la simple complétion :</p>
-
-        <ul>
-          <li><strong>Backlog</strong> — réservoir de toutes les tâches identifiées</li>
-          <li><strong>À faire</strong> — tâches planifiées pour la séance en cours</li>
-          <li><strong>En cours</strong> — tâches actives avec responsable assigné</li>
-          <li><strong>En revue</strong> — tâches à valider (livrable à vérifier)</li>
-          <li><strong>Terminé</strong> — tâches closes avec preuve de réalisation</li>
-        </ul>
-
-        <div class="tech-note">
-          <strong>Pourquoi 5 colonnes et non 3 ?</strong> Un Kanban classique (À faire / En cours / Terminé) ne distingue pas la validation de la complétion. La colonne "En revue" évite d'intégrer des livrables non vérifiés dans le flux de production — pratique standard en environnement agile professionnel.
+      <article class="comp-article" id="c14">
+        <div class="comp-head">
+          <span class="comp-id">C14</span>
+          <h2>Planification des activités</h2>
         </div>
 
-        <p><strong>Rituel de pilotage par séance :</strong> en début de chaque séance, je définissais les objectifs prioritaires. En fin de séance, un point d'avancement rapide (moins de 5 minutes) permettait de mettre à jour le tableau et de replanifier si nécessaire. Ce rituel maintenait une visibilité partagée sur l'état réel du projet.</p>
+        <div class="real-block">
+          <p class="real-label">
+            Réalisation en cours de formation - Hackathon BTS SIO
+          </p>
 
-        <p><strong>Résultats obtenus :</strong></p>
-        <ul>
-          <li>Dépendances techniques respectées sans blocage majeur : GLPI → API → Frontend → PRA</li>
-          <li>Objectifs de séance atteints et traçables (ex. : routes GET de l'API fonctionnelles en séance 2)</li>
-          <li>Répartition des rôles claire, réduisant les temps morts et la duplication d'effort</li>
-        </ul>
+          <p>
+            En qualité de <strong>chef de projet</strong> pour l'équipe Altis,
+            j'ai pris en charge la planification opérationnelle complète du
+            projet dans un contexte de contrainte temporelle forte (livrables
+            attendus à chaque séance).
+          </p>
 
-        <!-- Insérer captures : tableau Trello, carte SMART, planning de séances -->
-        <div class="img-placeholder">[ Capture d'écran — Tableau Trello · Vue Kanban 5 colonnes ]</div>
-        <div class="img-placeholder">[ Capture d'écran — Exemple de carte Trello · Critères SMART et responsable ]</div>
-      </div>
+          <p>
+            <strong>Décomposition en tâches SMART :</strong> j'ai structuré
+            l'ensemble du projet en tâches répondant aux critères SMART
+            (Spécifiques, Mesurables, Atteignables, Réalistes, Temporellement
+            définies). Chaque tâche était associée à un responsable, une
+            échéance et un critère de validation explicite, évitant toute
+            ambiguïté sur la définition du "terminé".
+          </p>
 
-      <div class="real-block">
-        <p class="real-label">Réalisation en cours de formation</p>
-        <p>À compléter — insérer ici une réalisation issue de la formation (projet pédagogique, TP planification, diagramme de Gantt).</p>
-      </div>
+          <p>
+            <strong>Outil de suivi - Tableau Trello Kanban :</strong> j'ai mis
+            en place un tableau structuré en 4 colonnes, ce qui permettait de
+            distinguer la validation de la simple complétion :
+          </p>
 
-    </article>
+          <ul>
+            <li>
+              <strong>À faire</strong> - tâches planifiées pour la séance en
+              cours
+            </li>
+            <li>
+              <strong>En cours</strong> - tâches actives avec responsable
+              assigné
+            </li>
+            <li>
+              <strong>En revue</strong> - tâches à valider (livrable à vérifier)
+            </li>
+            <li>
+              <strong>Terminé</strong> - tâches closes avec preuve de
+              réalisation
+            </li>
+          </ul>
 
-  </div>
+          <div class="tech-note">
+            <strong>Pourquoi 4 colonnes et non 3 ?</strong> Un Kanban classique
+            (À faire / En cours / Terminé) ne distingue pas la validation de la
+            complétion. La colonne "En revue" évite d'intégrer des livrables non
+            vérifiés dans le flux de production.
+          </div>
 
-  <footer class="site-footer">
-    Iganze Virgile · BTS SIO SISR · Efrei Paris · Session 2027
-  </footer>
+          <p>
+            <strong>Rituel de pilotage par séance :</strong> en début de chaque
+            séance, je définissais les objectifs prioritaires. En fin de séance,
+            un point d'avancement rapide (moins de 5 minutes) permettait de
+            mettre à jour le tableau et de replanifier si nécessaire. Ce rituel
+            maintenait une visibilité partagée sur l'état réel du projet.
+          </p>
 
-</body>
+          <p><strong>Résultats obtenus :</strong></p>
+          <ul>
+            <li>
+              Objectifs de séance atteints et traçables (ex. : routes GET de
+              l'API fonctionnelles en séance 2)
+            </li>
+            <li>
+              Répartition des rôles claire, réduisant les temps morts et la
+              duplication d'effort
+            </li>
+          </ul>
+
+          <img src="kanban.png" alt="Tableau Trello Vue Kanban 4 colonnes" />
+          <img
+            src="detail.png"
+            alt="Exemple de carte Trello Critères SMART et responsable"
+          />
+        </div>
+
+        <div class="real-block">
+          <p class="real-label">Réalisation en milieu professionnel</p>
+          <p>À compléter</p>
+        </div>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      Iganze Virgile · BTS SIO SISR · Efrei Paris · Session 2027
+    </footer>
+  </body>
 </html>
